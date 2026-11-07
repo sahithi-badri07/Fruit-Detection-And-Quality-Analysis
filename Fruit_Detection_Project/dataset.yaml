@@ -1,0 +1,11 @@
+path: dataset
+
+train: images/train
+val: images/val
+
+names:
+  0: apple
+  1: banana
+  2: orange
+  3: fresh
+  4: rotten
