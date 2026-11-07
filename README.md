@@ -2,88 +2,103 @@
 
 📌 Project Overview
 
-Fruit Detection and Quality Analysis is a Python-based web application developed using Streamlit. The project aims to detect fruits from uploaded images and analyze their quality using image processing and machine learning techniques.
+Fruit Detection and Quality Analysis is a computer vision-based project developed using Python, Streamlit, and YOLOv8.
 
-The application provides a simple and user-friendly interface that helps users identify fruits and assess their quality.
+The system detects fruits from images and provides an interactive interface for fruit detection and quality analysis. It aims to support the identification and classification of fruits based on visual characteristics.
 
 🎯 Objectives
 
 - Detect fruits from uploaded images.
-- Identify different types of fruits.
-- Analyze fruit quality.
-- Classify fruits based on their quality.
-- Provide an interactive web interface using Streamlit.
+- Identify different fruit categories.
+- Analyze fruit quality based on visual features.
+- Use deep learning for accurate fruit detection.
+- Provide a user-friendly web application.
 
 🛠️ Technologies Used
 
 - Python
 - Streamlit
+- YOLOv8
 - OpenCV
 - NumPy
 - Pandas
-- Pillow
-- Machine Learning / Deep Learning (as implemented)
+- PyTorch
 
 📂 Project Structure
 
-Fruit-Detection-and-Quality-Analysis/
+Fruit_Detection_Project/
 │
-├── streamlit.py
-├── dataset/
-├── models/
-├── images/
+├── fruitssss/
+│   ├── apo.jpeg
+│   ├── apple.jpg
+│   ├── banana1.jpeg
+│   └── other fruit images
+│
+├── runs/
+│   └── detect/
+│       └── train/
+│
+├── app.py
+├── detect.py
+├── direct.py
+├── train.py
+├── dataset.yaml
 ├── requirements.txt
-├── README.md
-└── .gitignore
-
-⚙️ Installation and Setup
-
-Step 1: Clone the Repository
-
-git clone https://github.com/your-username/fruit-detection-quality-analysis.git
-
-Step 2: Navigate to the Project Folder
-
-cd fruit-detection-quality-analysis
-
-Step 3: Install Required Libraries
-
-pip install -r requirements.txt
-
-Step 4: Run the Application
-
-streamlit run streamlit.py
-
-The application will open in your web browser.
+├── yolov8n.pt
+└── README.md
 
 🚀 Features
 
-- User-friendly Streamlit interface.
-- Fruit image upload functionality.
-- Automatic fruit detection.
+- Fruit image detection using YOLOv8.
+- Image-based fruit identification.
+- Streamlit web interface.
+- Deep learning-based object detection.
 - Fruit quality analysis.
-- Display of detection and analysis results.
 
-💡 Applications
+⚙️ Installation and Setup
 
-- Smart agriculture.
-- Fruit quality inspection.
-- Automated fruit sorting.
-- Food processing industries.
-- Agricultural product evaluation.
+1. Clone the Repository
+
+git clone https://github.com/your-username/fruit-detection-quality-analysis.git
+
+2. Open Project Folder
+
+cd fruit-detection-quality-analysis
+
+3. Install Dependencies
+
+pip install -r requirements.txt
+
+4. Run the Streamlit Application
+
+streamlit run app.py
+
+The application will open in your browser.
+
+🧠 Model Information
+
+This project uses the YOLOv8n model for fruit detection.
+
+Model file: "yolov8n.pt"
+
+🌱 Applications
+
+- Smart agriculture
+- Fruit quality inspection
+- Automated fruit sorting
+- Food processing industries
 
 🔮 Future Enhancements
 
-- Improve detection accuracy.
-- Support more fruit varieties.
-- Add real-time camera detection.
+- Improve fruit detection accuracy.
+- Support additional fruit categories.
 - Enhance quality classification.
+- Implement real-time camera detection.
 - Deploy the application online.
 
 👩‍💻 Author
-
 Badri Sahithi
 
 📜 License
 
-This project is developed for educational and academic purposes.
+This project is developed for educational purposes.
